@@ -1,0 +1,23 @@
+.container{
+    margin: 5rem 10rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.container h2{
+    padding-bottom: 1.5rem;
+    font-weight: 500;
+}
+.container form{
+    color: gray;
+    background-color: #dfdfdf;
+    border-radius: .5rem;
+}
+.container form input{
+    opacity: 0;
+    /* display: none; */
+}
+.check-box{
+    text-align: left;
+    margin: 1rem 0;
+}

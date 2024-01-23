@@ -1,0 +1,17 @@
+<div  class="container">
+    <form (keyup.enter)="onLogin()" action="" >
+        <div class="row">
+            <label for="username">Username: </label>
+            <input type="text" name="username" id="username" [(ngModel)]="loginObj.username">
+        </div>
+        <div class="row">
+            <label for="password">Password: </label>
+            <input type="text" name="password" id="password" [(ngModel)]="loginObj.password">
+        </div>
+        <div class="btn">
+            <button class="btn-cancel">Cancel</button>
+            <span class="spacer"></span>
+            <button class="btn-success" type="button" (click)="onLogin()" >Login</button>
+        </div>
+    </form>
+</div>

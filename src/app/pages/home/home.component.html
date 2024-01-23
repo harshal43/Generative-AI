@@ -1,0 +1,54 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+    <div class="left-section">
+        <div class="title">
+            <h3>Welcome to Generative AI Playground</h3>
+            <p>Your genpact certified safe space for gen AI-enabled innovation</p>
+        </div>
+        <div class="cards">
+                <div (click)="onClickChatGPT()" class="card">
+                    <h3>ChatGPT Playground</h3>
+                </div>
+
+            
+                <div class="card">
+                    <h3>Playground Library</h3>
+                </div>
+            
+
+                <div class="card" (click)="onClickBYOF()">
+                    <h3>Bring Your Own Files</h3>
+                </div>
+
+
+            <!-- <a  routerLink="/translate-your-files"> -->
+                <div class="card">
+                    <h3>Translate Your Files</h3> 
+                </div>
+            <!-- </a> -->
+            
+            <!-- <a  routerLink="/transcribe-your-files"> -->
+                <div class="card">
+                    <h3>Transcribe Your Files</h3> 
+                </div>
+            <!-- </a> -->
+            
+            <!-- <a class="card" routerLink="/research-assistant"> -->
+                <div class="card">
+                    <h3>Research Assistant</h3>
+                </div>
+            <!-- </a> -->
+            
+            <!-- <a class="card" routerLink="/image-generator"> -->
+                <div (click)="onclickIG()" class="card">
+                    <h3>Image Generator</h3>
+                </div>
+            <!-- </a> -->
+        </div>
+    </div>
+    <div class="right-section">
+
+    </div>
+</div>
+<router-outlet></router-outlet>

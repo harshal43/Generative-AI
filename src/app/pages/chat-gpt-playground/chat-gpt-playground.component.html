@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div *ngIf="isSideSectionVisible" class="left-side-section">
+    <div class="title">
+      <h3>New Conversation</h3>
+      <span class="spacer"></span>
+      <div (click)="sideSection()" class="side-section-icon">
+        <img src="../../../assets/img/menu1.png" alt="" />
+      </div>
+    </div>
+    <div class="chats">
+      <div class="chat">
+        <span>💬</span>
+        <p>hello world</p>
+        <span class="spacer"></span>
+        <span>🗑️</span>
+      </div>
+      <div class="chat">
+        <span>💬</span>
+        <p>hello world</p>
+        <span class="spacer"></span>
+        <span>🗑️</span>
+      </div>
+    </div>
+</div>
+  <div class="right-side-section">
+    <div class="nav">
+      <div *ngIf="!isSideSectionVisible" (click)="sideSection()" class="side-section-icon">
+        <img src="../../../assets/img/menu1.png" alt="" />
+      </div>
+      <div class="title">
+        <h1>ChatGPT Playground</h1>
+      </div>
+      <div class="count">
+        <p>Count Left: 500</p>
+        <img src="../../../assets/img/download1.png" alt="" />
+      </div>
+    </div>
+    <div class="msg"></div>
+    <div class="search">
+      <input type="text" placeholder="Ask a question" />
+      <img src="../../../assets/img/microphone.png" alt="" />
+      <img src="../../../assets/img/send-message.png" alt="" />
+    </div>
+  </div>
+</div>

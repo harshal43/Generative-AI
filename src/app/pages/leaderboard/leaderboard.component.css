@@ -1,0 +1,27 @@
+.container{
+    background-color: #22577A;
+    height: 100vh;
+    margin: 0;
+}
+.lboard-card{
+    margin: 0 3rem;
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: .6fr 1fr;
+}
+.left-section{
+    background-color: #9e3535;
+    color: white;
+    text-align: center;
+}
+.score{
+    font-size: large;
+}
+.score p{
+    color: #1C82AD;
+    /* font-size: large; */
+}
+
+.right-section{
+    background-color: white;
+}

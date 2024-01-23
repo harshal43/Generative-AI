@@ -1,0 +1,57 @@
+.container{
+    margin: 1rem;
+    column-gap: 1rem;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #161A30;
+    color: #ffffff;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+img:hover{
+    cursor: pointer;
+}
+.title h1{
+    margin: .8rem;
+    font-weight: 400;
+}
+.msg{
+    height: 52vh;
+    background-color: #fafaf6;
+    border: 1px solid #B6BBC4;
+}
+.msg>.card{
+    text-align: center;
+    margin: 2rem 18rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px #B6BBC4;
+    border-radius: .5rem;
+}
+.gray{
+    color: #858687;
+}
+.search{
+    margin-top: 1rem;
+    border: 1px solid #B6BBC4;
+    width: 99.9%;
+    display: flex;
+    height: 3rem;
+    align-items: center;
+}
+.search input{
+    height: 2.5rem;
+    width: 100%;
+    border: none;
+    padding: 0 1rem;
+    outline: none;
+    font-size: medium;
+}
+.search img{
+    padding: 0 1rem;
+}
