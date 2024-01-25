@@ -6,45 +6,35 @@
             <h3>Welcome to Generative AI Playground</h3>
             <p>Your genpact certified safe space for gen AI-enabled innovation</p>
         </div>
-        <div class="cards">
-                <div (click)="onClickChatGPT()" class="card">
-                    <h3>ChatGPT Playground</h3>
+        <div class="cards" >
+                <div *ngFor="let card of cards" class="card" routerLink={{card.link}}>
+                    <h3>{{card.title}}</h3>
                 </div>
-
-            
-                <div class="card">
+        
+                 <!-- <a class="card">
                     <h3>Playground Library</h3>
-                </div>
+                </a>
             
-
-                <div class="card" (click)="onClickBYOF()">
+                <a class="card" routerLink="bring-your-own-file">
                     <h3>Bring Your Own Files</h3>
-                </div>
+                </a>
 
-
-            <!-- <a  routerLink="/translate-your-files"> -->
-                <div class="card">
+                <a class="card">
                     <h3>Translate Your Files</h3> 
-                </div>
-            <!-- </a> -->
+                </a>
             
-            <!-- <a  routerLink="/transcribe-your-files"> -->
-                <div class="card">
+                <a class="card">
                     <h3>Transcribe Your Files</h3> 
-                </div>
-            <!-- </a> -->
-            
-            <!-- <a class="card" routerLink="/research-assistant"> -->
-                <div class="card">
+                </a>
+          
+                <a class="card">
                     <h3>Research Assistant</h3>
-                </div>
-            <!-- </a> -->
+                </a>
             
-            <!-- <a class="card" routerLink="/image-generator"> -->
-                <div (click)="onclickIG()" class="card">
+                <a routerLink="image-generator" class="card">
                     <h3>Image Generator</h3>
-                </div>
-            <!-- </a> -->
+                </a>
+              -->
         </div>
     </div>
     <div class="right-section">

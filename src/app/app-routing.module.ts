@@ -36,7 +36,6 @@ const routes: Routes = [
     path: "image-generator",
     component: ImageGeneratorComponent
   }
-  
 ];
 
 @NgModule({

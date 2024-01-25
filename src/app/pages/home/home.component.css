@@ -21,20 +21,22 @@
     /* grid-auto-flow: row; */
     /* flex-wrap: wrap; */
     /* grid-template-columns: repeat(auto-fit,1fr); */
-    gap: 1rem;
+    gap: 1.3rem;
     /* justify-content: flex-start; */
 }
 
 .card{
-    /* border: 2px solid black; */
-    /* width: 18rem; */
     height: 8rem;
-    box-shadow: 0 0 1.5rem #53b6e0;
+    box-shadow: 0 0 1rem #53b6e0;
     color: #4AABCA;
     text-align: center;
     text-decoration: none;
+    border-left: 2px solid #1C82AD;
+}
+.inside-card{
 }
 .card:hover{
     cursor:pointer;
-    /* box-shadow: 10px 10px 1rem #1C82AD; */
+
+    box-shadow: -1px -1px -10rem #1C82AD;
 }
