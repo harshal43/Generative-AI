@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -13,17 +14,17 @@ export class LoginComponent {
   }
 
   constructor(
-    private _router: Router
+    private _router: Router,
+    private _auth: AuthService
   ) {
     
   }
 
   onLogin(){
-    if(this.loginObj.username=="admin" && this.loginObj.password=="123"){
-      this._router.navigateByUrl("/home-openai");
-    }
-    else{
-      alert("Please enter correct username or password!");
-    }
+    this._auth.login(this.loginObj).subscribe({
+      next:()=>{
+        this._router.navigateByUrl("home-openai")
+      }
+    })
   }
 }
